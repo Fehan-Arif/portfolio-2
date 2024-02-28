@@ -23,13 +23,16 @@ section:nth-child(odd) {
   margin: 10px 0;
 
   overflow: hidden;
-  border-right: .15rem solid orange; /*typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  border-right: .15rem solid orange;
+  /*typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
   /* font-size: 1.6rem; */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .15em;
+  /* Adjust as needed */
   width: 0;
-  animation: 
-    typing 2s steps(20,end) forwards,
+  animation:
+    typing 2s steps(20, end) forwards,
     blink-caret .75s step-end infinite;
   animation-delay: 3s;
 }
@@ -48,49 +51,69 @@ section:nth-child(odd) {
   margin: 4px 2px;
   border-radius: 28px;
 }
+
 .button-view {
   color: black;
 }
 
 /* Typing Animation */
-.typed{
+.typed {
   display: inline-block;
 }
-.typed .greeting{
+
+.typed .greeting {
   overflow: hidden;
-  border-right: .15em solid orange; /*typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  border-right: .15em solid orange;
+  /*typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
   font-size: 1.6rem;
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .15em;
+  /* Adjust as needed */
   width: 0;
-  animation: 
-    typing 3s steps(40,end) forwards,
+  animation:
+    typing 3s steps(40, end) forwards,
     blink-caret .75s step-end infinite;
 }
 
 .typed .bio {
   overflow: hidden;
-  border-right: .15em solid orange; /*typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  border-right: .15em solid orange;
+  /*typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
   /* font-size: 1.6rem; */
-  letter-spacing: .15rem; /* Adjust as needed */
+  letter-spacing: .15rem;
+  /* Adjust as needed */
   width: 0;
-  animation: 
-    typing 3s steps(40,end) forwards,
+  animation:
+    typing 3s steps(40, end) forwards,
     blink-caret .75s step-end infinite;
   animation-delay: 6s;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
 }
 
 /* Grid  Hero*/
@@ -129,7 +152,8 @@ section:nth-child(odd) {
 #projects-showcase {
   color: #000;
 }
-.projects-heading{
+
+.projects-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,37 +161,62 @@ section:nth-child(odd) {
   gap: 2rem;
   margin-bottom: 20px;
 }
+
+.projects-heading h2 {
+  font-size: 2rem;
+}
+
 .project {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 2fr;
   grid-template-rows: 2fr 2fr;
   /* grid: 1fr /1fr, 4fr / 2fr; */
   gap: 30px;
-  height: 100vh;
+  height: 130vh;
   /* justify-content: center; */
 }
+
 .project img {
   height: 250px;
   width: 100%;
 }
+
 .projects-grid {
   border: 1px solid #000;
   /* border-radius: 2px; */
 }
-.portfolio{
-grid-column-start: 2;
+
+.portfolio {
+  grid-column-start: 2;
 }
 
 .resume {
-grid-column-start: 3;
+  grid-column-start: 3;
 }
 
 .game {
-grid-column-start: 2;
+  grid-column-start: 2;
 }
+
 .blog {
-grid-column-start: 3;
+  grid-column-start: 3;
 }
+
+/* About me section */
+#about-me {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me .container {
+  width: 50%;
+}
+.about-me-heading {
+  font-size: 2rem;
+}
+
 /* Media Screen Change by button positioning */
 @media screen and (max-width: 723px) {
   #hero-section {
