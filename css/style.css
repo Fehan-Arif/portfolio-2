@@ -125,11 +125,49 @@ section:nth-child(odd) {
 }
 
 
-/* Grid Project Showcase */
+/* Grid Project Showcase  */
+#projects-showcase {
+  color: #000;
+}
+.projects-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 20px;
+}
+.project {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  /* grid: 1fr /1fr, 4fr / 2fr; */
+  gap: 30px;
+  height: 100vh;
+  /* justify-content: center; */
+}
+.project img {
+  height: 250px;
+  width: 100%;
+}
+.projects-grid {
+  border: 1px solid #000;
+  /* border-radius: 2px; */
+}
+.portfolio{
+grid-column-start: 2;
+}
 
+.resume {
+grid-column-start: 3;
+}
 
-
-
+.game {
+grid-column-start: 2;
+}
+.blog {
+grid-column-start: 3;
+}
 /* Media Screen Change by button positioning */
 @media screen and (max-width: 723px) {
   #hero-section {
