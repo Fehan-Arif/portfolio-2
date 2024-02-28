@@ -1,0 +1,115 @@
+/* Body Font and margin fix */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  /* font-style: normal; */
+  font-variation-settings:
+    "slnt" 0;
+  color: #F0DFC8;
+}
+
+/* Odd number section background color  */
+section:nth-child(odd) {
+  background-color: #303030;
+}
+
+/* Font for my name */
+.my-name {
+  font-family: 'Nickainley', sans-serif;
+  font-size: 5rem;
+  margin: 10px 0;
+}
+
+/* Button Styling */
+.btn {
+  background-color: #E16539;
+  width: 175.19px;
+  font-family: "Inter", sans-serif;
+  color: #F0DFC8;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 28px;
+}
+.button-view {
+  color: black;
+}
+
+/* Typing Animation */
+.typed{
+  display: inline-block;
+}
+.typed .greeting{
+
+  overflow: hidden;
+  border-right: .15em solid orange; /*typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  font-size: 1.6rem;
+  letter-spacing: .15em; /* Adjust as needed */
+  width: 0;
+  animation: 
+    typing 3s steps(40,end) forwards,
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* Grid  Hero*/
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  height: 100vh;
+}
+
+.hero-info-grid-item {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.hero-image {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Hero image  */
+.hero-image img {
+  height: 80%;
+  width: 80%;
+}
+
+
+/* Grid Project Showcase */
+
+
+
+
+/* Media Screen Change by button positioning */
+@media screen and (max-width: 723px) {
+  #hero-section {
+    background-color: yellow;
+  }
+}
