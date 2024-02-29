@@ -217,6 +217,43 @@ section:nth-child(odd) {
   font-size: 2rem;
 }
 
+/* Get in touch section  */
+#contact-me {
+  color: #000;
+}
+.contact-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 70vh;
+}
+.contact-header{
+  grid-column-start: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.contact-message{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.contact-box{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* Media Screen Change by button positioning */
 @media screen and (max-width: 723px) {
   #hero-section {
