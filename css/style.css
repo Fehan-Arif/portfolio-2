@@ -12,7 +12,7 @@ body {
 }
 
 /* Odd number section background color  */
-section:nth-child(odd) {
+section:nth-child(odd), #footer {
   background-color: #303030;
 }
 
@@ -254,6 +254,30 @@ section:nth-child(odd) {
   justify-content: center;
   align-items: center;
 }
+
+/* Footer section  */
+#footer {
+  /* margin-bottom: 0; */
+}
+#footer .container {
+  display: flex;
+  height: 30vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .container ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#footer .container ul li a {
+    color: #F0DFC8;
+}
+
 /* Media Screen Change by button positioning */
 @media screen and (max-width: 723px) {
   #hero-section {
