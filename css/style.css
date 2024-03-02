@@ -1,0 +1,185 @@
+/* Main and Fonts */
+.main {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "slnt" 0;
+  color: #F0DFC8;
+}
+
+.my-name {
+  font-family: 'Nickainley', sans-serif;
+  font-size: 5rem;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+a {
+  color: #F0DFC8;
+}
+
+/* Backgrounds */
+/* Odd number section background color  */
+section:nth-child(odd),
+#footer {
+  background-color: #303030;
+}
+
+section:nth-child(even) {
+  color: #000;
+}
+
+/* Button Styling */
+.btn {
+  background-color: #E16539;
+  width: 175.19px;
+  font-family: "Inter", sans-serif;
+  color: #F0DFC8;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 28px;
+}
+
+.btn:hover,li:hover {
+  background-color: brown;
+}
+
+.button-view {
+  color: black;
+}
+
+
+/* Image Sizing */
+.hero-image img {
+  height: 300px;
+  width: 300px;
+}
+
+.projects img {
+  height: 250px;
+  width: 250px;
+}
+
+/* Grid  Hero Section*/
+#hero-section {
+  height: 100vh;
+}
+
+.hero-grid,
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+/* Preject showcase Section */
+#project-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.projects-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid brown;
+  width: 300px;
+  margin: 40px;
+  padding: 10px;
+}
+
+/* About me section */
+#about-me {
+  height: 100vh;
+}
+
+#about-me>.container {
+  width: 50%;
+}
+
+/* Get in touch section */
+#contact-me {
+  height: 100vh;
+}
+
+#contact-me>.contact-flex {
+  width: 50%;
+}
+
+.contact-header,
+.contact-message,
+.contact-box,
+.footer-flex,
+#contact-me,
+#about-me,
+#hero-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  flex-direction: column;
+}
+
+/* Footer Section  */
+.footer-flex {
+  height: 30vh;
+  flex-direction: column;
+}
+
+.footer-flex>ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 815px) {
+  .btn {
+    display: block;
+    width: 100%;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .hero-image {
+    grid-row-start: 1;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
