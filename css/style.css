@@ -1,40 +1,37 @@
-/* Body Font and margin fix */
-body {
+/* Main and Fonts */
+.main {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  /* font-weight: <weight>; */
-  /* font-style: normal; */
   font-variation-settings:
     "slnt" 0;
   color: #F0DFC8;
 }
 
-/* Odd number section background color  */
-section:nth-child(odd), #footer {
-  background-color: #303030;
-}
-
-/* Font for my name */
 .my-name {
   font-family: 'Nickainley', sans-serif;
   font-size: 5rem;
   margin: 10px 0;
+}
 
-  overflow: hidden;
-  border-right: .15rem solid orange;
-  /*typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  /* font-size: 1.6rem; */
-  letter-spacing: .15em;
-  /* Adjust as needed */
-  width: 0;
-  animation:
-    typing 2s steps(20, end) forwards,
-    blink-caret .75s step-end infinite;
-  animation-delay: 3s;
+h2 {
+  font-size: 2.5rem;
+}
+
+a {
+  color: #F0DFC8;
+}
+
+/* Backgrounds */
+/* Odd number section background color  */
+section:nth-child(odd),
+#footer {
+  background-color: #303030;
+}
+
+section:nth-child(even) {
+  color: #000;
 }
 
 /* Button Styling */
@@ -52,235 +49,137 @@ section:nth-child(odd), #footer {
   border-radius: 28px;
 }
 
+.btn:hover,li:hover {
+  background-color: brown;
+}
+
 .button-view {
   color: black;
 }
 
-/* Typing Animation */
-.typed {
-  display: inline-block;
+
+/* Image Sizing */
+.hero-image img {
+  height: 300px;
+  width: 300px;
 }
 
-.typed .greeting {
-  overflow: hidden;
-  border-right: .15em solid orange;
-  /*typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  font-size: 1.6rem;
-  letter-spacing: .15em;
-  /* Adjust as needed */
-  width: 0;
-  animation:
-    typing 3s steps(40, end) forwards,
-    blink-caret .75s step-end infinite;
+.projects img {
+  height: 250px;
+  width: 250px;
 }
 
-.typed .bio {
-  overflow: hidden;
-  border-right: .15em solid orange;
-  /*typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  /* font-size: 1.6rem; */
-  letter-spacing: .15rem;
-  /* Adjust as needed */
-  width: 0;
-  animation:
-    typing 3s steps(40, end) forwards,
-    blink-caret .75s step-end infinite;
-  animation-delay: 6s;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent
-  }
-
-  50% {
-    border-color: orange;
-  }
-}
-
-/* Grid  Hero*/
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
+/* Grid  Hero Section*/
+#hero-section {
   height: 100vh;
 }
 
-.hero-info-grid-item {
-  grid-column-start: 2;
-  grid-row-start: 2;
-  display: flex;
-  align-items: center;
+.hero-grid,
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
 }
 
 .hero-image {
-  grid-column-start: 3;
-  grid-row-start: 2;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-
-/* Hero image  */
-.hero-image img {
-  height: 80%;
-  width: 80%;
-}
-
-
-/* Grid Project Showcase  */
-#projects-showcase {
-  color: #000;
+/* Preject showcase Section */
+#project-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
 .projects-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 20px;
 }
 
-.projects-heading h2 {
-  font-size: 2rem;
-}
-
-.project {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 2fr;
-  grid-template-rows: 2fr 2fr;
-  /* grid: 1fr /1fr, 4fr / 2fr; */
-  gap: 30px;
-  height: 130vh;
-  /* justify-content: center; */
-}
-
-.project img {
-  height: 250px;
-  width: 100%;
-}
-
-.projects-grid {
-  border: 1px solid #000;
-  /* border-radius: 2px; */
-}
-
-.portfolio {
-  grid-column-start: 2;
-}
-
-.resume {
-  grid-column-start: 3;
-}
-
-.game {
-  grid-column-start: 2;
-}
-
-.blog {
-  grid-column-start: 3;
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid brown;
+  width: 300px;
+  margin: 40px;
+  padding: 10px;
 }
 
 /* About me section */
 #about-me {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-#about-me .container {
+#about-me>.container {
   width: 50%;
 }
-.about-me-heading {
-  font-size: 2rem;
-}
 
-/* Get in touch section  */
+/* Get in touch section */
 #contact-me {
-  color: #000;
-}
-.contact-grid {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: 70vh;
-}
-.contact-header{
-  grid-column-start: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
+  height: 100vh;
 }
 
-.contact-message{
-  grid-column-start: 2;
-  grid-row-start: 2;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
+#contact-me>.contact-flex {
+  width: 50%;
 }
 
-.contact-box{
-  grid-column-start: 2;
-  grid-row-start: 2;
+.contact-header,
+.contact-message,
+.contact-box,
+.footer-flex,
+#contact-me,
+#about-me,
+#hero-section{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-/* Footer section  */
-#footer {
-  /* margin-bottom: 0; */
+.contact-box {
+  flex-direction: column;
 }
-#footer .container {
-  display: flex;
+
+/* Footer Section  */
+.footer-flex {
   height: 30vh;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-#footer .container ul {
+.footer-flex>ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
 
-#footer .container ul li a {
-    color: #F0DFC8;
+/* Media Queries */
+@media only screen and (max-width: 815px) {
+  .btn {
+    display: block;
+    width: 100%;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
 
-/* Media Screen Change by button positioning */
-@media screen and (max-width: 723px) {
-  #hero-section {
-    background-color: yellow;
+@media only screen and (max-width: 40em) {
+  .hero-image {
+    grid-row-start: 1;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
