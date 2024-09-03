@@ -52,7 +52,7 @@ h2 {
 }
 
 a {
-  color: #F0DFC8;
+  color: #f0dfc8;
 }
 
 /* Backgrounds */
@@ -68,10 +68,10 @@ section:nth-child(odd) {
 
 /* Button Styling */
 .btn {
-  background-color: #E16539;
+  background-color: #e16539;
   width: 175.19px;
   font-family: "Inter", sans-serif;
-  color: #F0DFC8;
+  color: #f0dfc8;
   border: none;
   padding: 20px;
   text-align: center;
@@ -81,14 +81,14 @@ section:nth-child(odd) {
   border-radius: 28px;
 }
 
-.btn:hover,li:hover {
+.btn:hover,
+li:hover {
   background-color: brown;
 }
 
 .button-view {
   color: black;
 }
-
 
 /* Image Sizing */
 .hero-image img {
@@ -156,6 +156,7 @@ section:nth-child(odd) {
   padding: 10px;
   margin-bottom: 5px;
 }
+
 .project-card a {
   color: #000;
   text-decoration: none;
@@ -186,7 +187,7 @@ section:nth-child(odd) {
 .footer-flex,
 #contact-me,
 #about-me,
-#hero-section{
+#hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
