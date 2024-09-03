@@ -33,7 +33,7 @@
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+.nav-flex li a:hover:not(.active) {
   background-color: brown;
 }
 
@@ -208,6 +208,20 @@ li:hover {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  padding-left: 0;
+}
+.footer-flex>ul>li a {
+  text-decoration: none;
+}
+.footer-flex i {
+  padding-right: 5px;
+}
+
+.footer-flex>ul li:hover {
+background-color: #303030;
+}
+.footer-flex>ul>li a:hover {
+  text-decoration: underline;
 }
 
 /* Media Queries */
