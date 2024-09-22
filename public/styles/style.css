@@ -4,13 +4,45 @@
   padding: 0;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-variation-settings:
-    "slnt" 0;
-  color: #F0DFC8;
+  font-variation-settings: "slnt" 0;
+  color: #f0dfc8;
+}
+
+.nav-container {
+  position: fixed;
+  width: 100%;
+  background-color: #303030;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.nav-flex ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: flex-end;
+}
+
+.nav-flex li a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-flex li a:hover:not(.active) {
+  background-color: brown;
+}
+
+.active {
+  background-color: #e16539;
 }
 
 .my-name {
-  font-family: 'Nickainley', sans-serif;
+  font-family: "Nickainley", sans-serif;
   font-size: 5rem;
   margin: 10px 0;
 }
@@ -20,26 +52,26 @@ h2 {
 }
 
 a {
-  color: #F0DFC8;
+  color: #f0dfc8;
 }
 
 /* Backgrounds */
 /* Odd number section background color  */
-section:nth-child(odd),
+section:nth-child(even),
 #footer {
   background-color: #303030;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   color: #000;
 }
 
 /* Button Styling */
 .btn {
-  background-color: #E16539;
+  background-color: #e16539;
   width: 175.19px;
   font-family: "Inter", sans-serif;
-  color: #F0DFC8;
+  color: #f0dfc8;
   border: none;
   padding: 20px;
   text-align: center;
@@ -49,14 +81,14 @@ section:nth-child(even) {
   border-radius: 28px;
 }
 
-.btn:hover,li:hover {
+.btn:hover,
+li:hover {
   background-color: brown;
 }
 
 .button-view {
   color: black;
 }
-
 
 /* Image Sizing */
 .hero-image img {
@@ -66,7 +98,7 @@ section:nth-child(even) {
 
 .projects img {
   height: 250px;
-  width: 250px;
+  width: 300px;
 }
 
 /* Grid  Hero Section*/
@@ -99,6 +131,7 @@ section:nth-child(even) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 51px;
 }
 
 .project-card {
@@ -108,7 +141,26 @@ section:nth-child(even) {
   border: 2px solid brown;
   width: 300px;
   margin: 40px;
+}
+
+.card-title a {
+  text-decoration: none;
+  color: #000;
+}
+
+.card-title a:hover {
+  color: #e16539;
+}
+
+.card-body {
   padding: 10px;
+  margin-bottom: 5px;
+}
+
+.project-card a {
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 5px;
 }
 
 /* About me section */
@@ -135,7 +187,7 @@ section:nth-child(even) {
 .footer-flex,
 #contact-me,
 #about-me,
-#hero-section{
+#hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,6 +208,20 @@ section:nth-child(even) {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  padding-left: 0;
+}
+.footer-flex>ul>li a {
+  text-decoration: none;
+}
+.footer-flex i {
+  padding-right: 5px;
+}
+
+.footer-flex>ul li:hover {
+background-color: #303030;
+}
+.footer-flex>ul>li a:hover {
+  text-decoration: underline;
 }
 
 /* Media Queries */
